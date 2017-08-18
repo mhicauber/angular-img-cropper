@@ -1317,7 +1317,7 @@ angular.module('angular-img-cropper', []).directive("imageCropper", ['$document'
                   crop.setImage(imageObj, newValue.fileType);
                   scope.$apply();
               }, false);
-              imageObj.src = newValue.imageData;
+              imageObj.src = newValue;
             }
 
             scope.$watch('cropWidth', setup);
